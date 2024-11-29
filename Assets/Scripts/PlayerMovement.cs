@@ -11,19 +11,20 @@ public class PlayerMovement : MonoBehaviour
     public Vector3 rotation, move;
     private float rotX, rotY, xVelocity, yVelocity;
     public float mouseSensitivity, joyCamSensitivity, snappiness, upDownRange;
-    public bool cursorFree;
+    public bool cursorFree,canInspect;
     public CharacterController control;
     public GameObject mainCam;
 
+
     void Start()
     {
-
+        canInspect = false;
     }
 
     void Update()
     {
 
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E) && canInspect)
         {
             //allow this only near certain objects, and have said objects change the text object of the ui
             inspect = !inspect;
@@ -32,6 +33,7 @@ public class PlayerMovement : MonoBehaviour
         if (!inspect)
         {
             PlayerMove();
+            UIManager.GetComponent<UIScript>().UIPanel.SetActive(false);
         }
         else
         {
