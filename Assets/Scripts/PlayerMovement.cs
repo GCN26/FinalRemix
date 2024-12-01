@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public float speed;
-    public bool inspect;
+    public bool inspect,pauseMenu;
     public GameObject UIManager;
     public Vector3 inputs = Vector3.zero;
     public Vector3 rotation, move;
@@ -29,15 +29,24 @@ public class PlayerMovement : MonoBehaviour
             //allow this only near certain objects, and have said objects change the text object of the ui
             inspect = !inspect;
         }
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            pauseMenu = !pauseMenu;
+        }
 
-        if (!inspect)
+        if (!inspect && !pauseMenu)
         {
             PlayerMove();
-            UIManager.GetComponent<UIScript>().UIPanel.SetActive(false);
+            UIManager.GetComponent<UIScript>().ButtonClose();
         }
-        else
+        else if (inspect && !pauseMenu)
         {
             if (UIManager.GetComponent<UIScript>().UIPanel.activeSelf == false) UIManager.GetComponent<UIScript>().EnablePanel();
+        }
+        else if (pauseMenu)
+        {
+            UIManager.GetComponent<UIScript>().ButtonClose();
+            inspect = false;
         }
     }
     public void InspectClose()
