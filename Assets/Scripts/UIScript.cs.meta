@@ -3,7 +3,20 @@ guid: ddfebc48f22ad2e429d652e025cc73bc
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - UIPanel: {instanceID: 0}
+  - InteractPop: {instanceID: 0}
+  - pauseMenu: {instanceID: 0}
+  - Scrollbar: {instanceID: 0}
+  - narrate: {instanceID: 0}
+  - audios: {instanceID: 0}
+  - nar1: {fileID: 8300000, guid: 8355938727eb68f4fba2832c8daee963, type: 3}
+  - nar2: {instanceID: 0}
+  - nar3: {instanceID: 0}
+  - nar4: {instanceID: 0}
+  - nar5: {instanceID: 0}
+  - nar6: {instanceID: 0}
+  - player: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

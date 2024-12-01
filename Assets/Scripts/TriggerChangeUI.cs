@@ -22,27 +22,38 @@ public class TriggerChangeUI : MonoBehaviour
             if (para == Paragraph._1)
             {
                 text.text = UI.GetComponent<UIScript>().para1;
-                //also change narration and nar time
+                UI.GetComponent<UIScript>().audios.clip = UI.GetComponent<UIScript>().nar1;
+                UI.GetComponent<UIScript>().narTimerTarget = 65;
             }
             else if (para == Paragraph._2)
             {
                 text.text = UI.GetComponent<UIScript>().para2;
+                UI.GetComponent<UIScript>().audios.clip = UI.GetComponent<UIScript>().nar2;
+                UI.GetComponent<UIScript>().narTimerTarget = 100;
             }
             else if (para == Paragraph._3)
             {
                 text.text = UI.GetComponent<UIScript>().para3;
+                UI.GetComponent<UIScript>().audios.clip = UI.GetComponent<UIScript>().nar3;
+                UI.GetComponent<UIScript>().narTimerTarget = 87;
             }
             else if (para == Paragraph._4)
             {
                 text.text = UI.GetComponent<UIScript>().para4;
+                UI.GetComponent<UIScript>().audios.clip = UI.GetComponent<UIScript>().nar4;
+                UI.GetComponent<UIScript>().narTimerTarget = 108;
             }
             else if (para == Paragraph._5)
             {
                 text.text = UI.GetComponent<UIScript>().para5;
+                UI.GetComponent<UIScript>().audios.clip = UI.GetComponent<UIScript>().nar5;
+                UI.GetComponent<UIScript>().narTimerTarget = 63;
             }
             else if (para == Paragraph._6)
             {
                 text.text = UI.GetComponent<UIScript>().para6;
+                UI.GetComponent<UIScript>().audios.clip = UI.GetComponent<UIScript>().nar6;
+                UI.GetComponent<UIScript>().narTimerTarget = 24;
             }
         }
     }

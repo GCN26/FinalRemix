@@ -4306,14 +4306,14 @@ MonoBehaviour:
     this understanding, newer and more accurate portrayals will be presented by creators
     and consumed by audiences. If trends continue, different identities will become
     much less divisive and more accepted by general audiences. The representations
-    made now will decided how future works will present identity, for better or worse.
+    made now will decide how future works will present identity, for better or worse.
   audios: {fileID: 900191662}
-  nar1: {fileID: 8300000, guid: 8355938727eb68f4fba2832c8daee963, type: 3}
-  nar2: {fileID: 0}
-  nar3: {fileID: 0}
-  nar4: {fileID: 0}
-  nar5: {fileID: 0}
-  nar6: {fileID: 0}
+  nar1: {fileID: 8300000, guid: 12292d1dc3ef09643918625f04870fe8, type: 3}
+  nar2: {fileID: 8300000, guid: 21a739ce897e7c746840b39cd133d6a8, type: 3}
+  nar3: {fileID: 8300000, guid: 1ad17776ec86acd4091accf75d660eb2, type: 3}
+  nar4: {fileID: 8300000, guid: c678ea1816c0fa04e8d4751bd54b107e, type: 3}
+  nar5: {fileID: 8300000, guid: aa0aca9dd0de6a247adf607de87ca2db, type: 3}
+  nar6: {fileID: 8300000, guid: 649da0fbf6252df47bbfe3f5a1db0c85, type: 3}
   player: {fileID: 1983916711}
 --- !u!4 &900191661
 Transform:
@@ -4342,7 +4342,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.444
   m_Pitch: 1
   Loop: 0
   Mute: 0
